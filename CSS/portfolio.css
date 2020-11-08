@@ -1,0 +1,262 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway-700-normal.woff2") format("woff2"),
+    url("../fonts/raleway-700-normal.woff") format("woff"),
+    url("../fonts/raleway-700-normal.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --primary-text: #212121;
+  --secondary-text: #757575;
+  --white-color: #ffffff;
+  --blue-color: #2196f3;
+  --light-gray: rgba(255, 255, 255, 0.6);
+  --button-background: #f5f4fa;
+  --bg-color: #2f303a;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--primary-text);
+  font-family: Roboto, sans-serif;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Стили для шапки страницы */
+
+.logo {
+  color: var(--blue-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+}
+
+.header-logo {
+  color: var(--primary-text);
+}
+
+.footer.logo {
+  color: var(--white-color);
+}
+
+.nav-link,
+.header.list,
+.footer.list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--blue-color);
+}
+
+.contacts-head {
+  color: var(--secondary-text);
+}
+
+.contacts-foot {
+  color: var(--light-gray);
+}
+
+.address-foot {
+  color: var(--white-color);
+}
+
+.contacts-foot:hover,
+.contacts-foot:focus,
+.contacts-head:hover,
+.contacts-head:focus,
+.address-foot:hover,
+.address-foot:focus {
+  color: var(--blue-color);
+}
+
+.header-container {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-container .list .list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-container .list .list-item:last-child {
+  margin-right: 331px;
+}
+
+.header-container .logo {
+  margin-right: 93px;
+}
+
+a[href="./portfolio.html"] {
+  color: var(--blue-color);
+}
+
+/* Стили для кнопок фильтра */
+
+.list .button {
+  color: var(--primary-text);
+  background-color: var(--button-background);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  border-radius: 4px;
+}
+
+.list .button:hover,
+.list .button:focus {
+  color: var(--white-color);
+  background-color: var(--blue-color);
+}
+
+.button.list {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.button.list .list:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* Стили для основного контента */
+
+.portfolio-container {
+  padding-left: 215px;
+  padding-right: 215px;
+}
+
+.project-name {
+  color: var(--primary-text);
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 700;
+}
+
+.project-type {
+  color: var(--secondary-text);
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight: 400;
+}
+
+.project-img {
+  display: block;
+}
+
+.portfolio.list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.portfolio.list .project {
+  margin-left: 30px;
+  margin-top: 30px;
+
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.portfolio.list:nth-last-child(-n + 3) {
+  margin-bottom: 94px;
+}
+
+.project-name {
+  padding-left: 24px;
+  padding-top: 20px;
+  margin-bottom: 4px;
+}
+
+.project-type {
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+
+/* Стили для футера */
+
+.footer {
+  background-color: var(--bg-color);
+  font-style: normal;
+}
+
+.footer-container {
+  padding-left: 215px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.footer.list {
+  padding-top: 20px;
+}
+
+.footer.list .list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
